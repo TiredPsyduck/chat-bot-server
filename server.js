@@ -1,6 +1,7 @@
 const http = require('http');
 const {MongoClient} = require('mongodb');
 const OpenAI = require("openai");
+const port = process.env.PORT
 
 var unreadMessages = []
 
@@ -179,4 +180,4 @@ http.createServer(function (req, res) {
     }
     res.end()
   })
-}).listen(10000)
+}).listen(port)
