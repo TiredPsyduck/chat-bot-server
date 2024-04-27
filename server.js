@@ -5,7 +5,7 @@ const port = process.env.PORT
 
 var unreadMessages = []
 
-const uri = "mongodb+srv://circlespace:NMUp4QxJCh9vcmy0@chatbot-widget.tkmifse.mongodb.net/?retryWrites=true&w=majority&appName=chatbot-widget&directConnection=true";
+const uri = "mongodb+srv://circlespace:NMUp4QxJCh9vcmy0@chatbot-widget.tkmifse.mongodb.net/?retryWrites=true&w=majority&appName=chatbot-widget&keepAlive=true&auto-reconnect=true";
 const client = new MongoClient(uri);
 const chatDatabase = "chatdb";
 const namesAndEmailsCollection = "namesAndEmails";
